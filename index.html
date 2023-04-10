@@ -1,51 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Adopat">
-  <!-- 用于设置文档在移动设备上的显示方式，这里指定文档的宽度为设备的宽度，可以适应不同的屏幕大小。 -->
-  <meta name="viewport" content="width=device-width">
-
-  <meta name="description"
-  content="死亡如风,常伴吾身。
-  哈撒凯,痛嘞啊噶痛。
-  剑之故事,以血为墨。
-  御剑于心,且听风吟。
-  如果你要来杀我，希望你把朋友也带上！
-  有些失误无法犯两次，一剑，一念。
-  话不多说,刀刃见真章。
-  汝欲赴死，易如反掌，灭亡之路，短的超乎你的想象。
-  我命由我不由天。纵使世人不再相信，我也从不放弃。
-  混沌将束缚你的翅膀。
-  混沌将把你重铸。
-  且随疾风前行，身后亦需留心。
-  长路漫漫唯剑作伴。">
-  <title>Hasaki</title>
-  <link rel="icon" href="images/yasuo.png" />
-  <link href="styles/style.css" rel="stylesheet">
-  <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adopat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasaki</title>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="icon" href="images/yasuo.png" >
 </head>
 
 <body>
-  <h1>Mozilla is cool</h1>
-  <img src="images/huohu.webp" alt="火狐浏览器">
-  <p>Mozilla是一个全球社区,这里聚集着来自五湖四海的</p>
+    <!-- Here is our main header that is used across all the pages of our website -->
 
-  <ul>
-    <li>技术人员</li>
-    <li>思考者</li>
-    <li>建造者</li>
-  </ul>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- A Search form is another common non-linear way to navigate through a website. -->
 
-  <p>我们致力于让Internet保持活力,保持畅通,人人皆可贡献,人人皆可创造。
-    我们坚信:开放平台的协作对于人的发展至关重要，也决定着我们共同的未来。
-  </p>
-  <p>为了达成我们共同的理想,我们遵循一系列的价值观和理念,请参阅<a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a>
-  </p>
-<button>切换用户</button>
-<p>菜谱,<a href="html/kung_pao_chicken.html" target="_blank">宫保鸡丁的做法</a></p>
-<script src="scripts/main.js" defer></script>
+        <form>
+            <input type="search" name="q" placeholder="Search query">
+            <input type="submit" value="Go!">
+        </form>
+    </nav>
+
+    <main>
+        <!-- It contains an article -->
+        <article>
+            <h2>Article heading</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris.
+                Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et
+                diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
+                consectetur.</p>
+
+            <h3>subsection</h3>
+
+            <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+            </p>
+
+            <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra
+                tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+            </p>
+
+            <h3>Another subsection</h3>
+
+            <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis
+                parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+                facilisis semper ac in est.</p>
+
+            <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas
+                convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis
+                velit, is fringille sem nunc vet mi.</p>
+        </article>
+
+        <!-- the aside content can also be nested within the main content -->
+        <aside>
+            <h2>Related</h2>
+
+            <ul>
+                <li><a href="html/homepage.html">LOL</a></li>
+                <li><a href="html/bird-watching.html">Bird</a></li>
+                <li><a href="html/letter.html">Letter</a></li>
+                <li><a href="html/debug-example.html">Debug</a></li>
+                <li><a href="#">Oh well...</a></li>
+            </ul>
+        </aside>
+    </main>
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer>
+        <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
 </body>
 
 </html>

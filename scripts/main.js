@@ -1,10 +1,10 @@
 let myImage = document.querySelector('img')
 myImage.onclick = function () {
     let mySrc = myImage.getAttribute('src');
-    if (mySrc === 'images/huohu.webp') {
-        myImage.setAttribute('src', 'images/huohu1.webp')
+    if (mySrc === '../images/huohu.webp') {
+        myImage.setAttribute('src', '../images/huohu1.webp')
     } else {
-        myImage.setAttribute('src', 'images/huohu.webp')
+        myImage.setAttribute('src', '../images/huohu.webp')
     }
 }
 let myButton = document.querySelector('button');
