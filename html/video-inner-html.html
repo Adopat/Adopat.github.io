@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video innner html</title>
+</head>
+
+<body>
+    <h1>video inner html </h1>
+    <video controls width="400" height="400" poster="../images/poster.png">
+        <source src="../video/rabbit320.mp4" type="video/mp4">
+        <source src="../video/rabbit320.webm" type="video/webm">
+        <p>你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+    </video>
+    <h2>auto</h2>
+    <auto controls>
+        <source src="../music/viper.mp3" type="audio/mp3">
+        <source src="../music/viper.ogg" type="audio/ogg">
+        <p>你的浏览器不支持 HTML5 音频，可点击<a href="../music/viper.mp3">此链接</a>收听。</p>
+    </auto>
+    <h2>ifram</h2>
+    <iframe src="https://www.baidu.com"
+        width="100%" height="500" frameborder="0"
+        allowfullscreen sandbox>
+  <p> <a href="https://www.baidu.com">
+    Fallback link for browsers that don't support iframes
+  </a> </p>
+</iframe>
+<h2>SVG</h2>
+<svg version="1.1"
+     baseProfile="full"
+     width="300" height="200"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="black" />
+  <circle cx="150" cy="100" r="90" fill="blue" />
+</svg>
+
+
+</body>
+
+</html>
